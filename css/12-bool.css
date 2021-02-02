@@ -22,7 +22,7 @@
 /* mix */
 /* responsive */
 /* /smartphone < 768 */
-@media screen and (min-width: 992px){
+@media screen and (max-width: 767px){
   .col-xs-1{
     width: calc( (100% / 12) * 1 )
   }
