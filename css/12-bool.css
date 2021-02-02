@@ -8,7 +8,7 @@
 /* /RESET */
 /* mix */
 .container{
-  max-width: 1170px;
+  max-width: 992px;
   margin: 0 auto;
 }
 [class*="col-"]{
