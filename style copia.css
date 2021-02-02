@@ -1,0 +1,216 @@
+.row {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+/* BLOCCO LEZIONI */
+#lezioni .row>.left,
+#lezioni .row>.right {
+  width: 50%;
+  float: left;
+}
+
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+/* BLOCCO STEPS */
+#steps .row>.left,
+#steps .row>.central,
+#steps .row>.right {
+  float: left;
+  width: 33%;
+}
+
+#steps {
+  text-align: center;
+}
+
+/* BLOCCO PERCHE */
+#why {
+  text-align: center;
+}
+
+#why .row>.first,
+#why .row>.second,
+#why .row>.third {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#why .row img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px
+}
+
+/* COMMON */
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container.grey {
+  background-color: #f9f9f9;
+}
+
+img {
+  height: 200px;
+}
+
+.clear {
+  clear: both;
+}
+
+/* RESPONIVE */
+/* TABLET 1024px */
+@media screen and (max-width: 1024px){
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    font-family: 'Oswald', sans-serif;
+  }
+  .row {
+    width: 90%;
+    font-size: 20px;
+    margin-top: 0;
+  }
+  img{
+    max-height: 180px;
+    margin-top: 80px;
+  }
+  #lezioni,
+  #why{
+    background: rgb(34,138,161);
+    background: linear-gradient(0deg, rgba(34,138,161,1) 0%, rgba(99,255,139,1) 100%, rgba(0,255,233,1) 100%);
+  }
+  #steps{
+    background: rgb(34,138,161);
+    background: linear-gradient(180deg, rgba(34,138,161,1) 0%, rgba(99,255,139,1) 100%, rgba(0,255,233,1) 100%);
+  }
+  #lezioni .row>.left,
+  #lezioni .row>.right{
+    width: 50%;
+    padding: 20px;
+  }
+  .container{
+    background-color: red;
+    padding-bottom: 50px;
+  }
+  #steps .row>.left,
+  #steps .row>.central{
+    float: left;
+    width: 50%;
+    padding: 20px;
+  }
+  #steps .row>.right{
+    width: 100%;
+  }
+  h1{
+    font-size: 50px;
+    padding-top: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  h3{
+    font-size: 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+  hr{
+    width: 40%;
+    margin: auto;
+    margin-top: 80px;
+    border: 1px solid black;
+  }
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    margin-top: 0px;
+  }
+}
+/* /TABLET 1024px */
+/* SMARTPHONE */
+@media screen and (max-width: 420px){
+  img{
+    max-height: 150px;
+    margin-top: 80px;
+  }
+  .container .grey{
+    display: none;
+  }
+  #lezioni,
+  #why{
+    background: rgb(34,138,161);
+    background: linear-gradient(0deg, rgba(34,138,161,1) 0%, rgba(99,255,139,1) 100%, rgba(0,255,233,1) 100%);
+  }
+  #steps{
+    background: rgb(34,138,161);
+    background: linear-gradient(180deg, rgba(34,138,161,1) 0%, rgba(99,255,139,1) 100%, rgba(0,255,233,1) 100%);
+  }
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 100%;
+    float: none;
+  }
+  .container{
+    background-color: red;
+    padding-bottom: 50px;
+  }
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: none;
+    width: 100%;
+  }
+  h1{
+    font-size: 80px;
+    padding-top: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    background-size:50%;
+    background-repeat: no-repeat;
+  }
+  h3{
+    font-size: 40px;
+    margin-top: 30px;
+    text-transform: uppercase;
+  }
+  hr{
+    width: 40%;
+    margin: auto;
+    margin-top: 80px;
+    border: 1px solid black;
+  }
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    margin-top: 0px;
+  }
+  #lezioni h1{
+    background-image: url("img/macchia_azzurra.png");
+  }
+  #steps h1{
+    background-image: url("img/macchia_gialla.png");
+  }
+  #why h1{
+    background-image: url("img/macchia_rosa.png");
+  }
+}
+/* /SMARTPHONE */
+/* /RESPONSIVE */
